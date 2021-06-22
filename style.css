@@ -18,8 +18,9 @@ header div.loader{
     height: 100px;
 }
 header div.loader span{
-    width: 8px;    
+    width: 30px;    
     height: 30px;
+    border-radius: 50%;
     background-color: #707070;
     text-align: center;
     margin-left: 10px;
