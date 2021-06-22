@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+ 
+ background-color: #141212;
+
+}
+header div.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+header div.loader span{
+    width: 8px;    
+    height: 30px;
+    background-color: #707070;
+    text-align: center;
+    margin-left: 10px;
+    animation: loader 2s alternate infinite;
+    
+}
+header div.loader span:nth-child(1){
+    animation-delay: 0;
+}
+header div.loader span:nth-child(2){
+    animation-delay: .2s;
+}
+
+header div.loader span:nth-child(3){
+    animation-delay: .5s;
+}
+
+header div.loader span:nth-child(4){
+    animation-delay: .7s;
+}
+
+@keyframes loader{
+    0%,100%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+div.home{
+    height:calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141212;
+    
+}
+div.home div.main{
+    text-align: center;
+}
+div.home div.main div.icon{
+    margin: 0 auto;
+}
+div.home div.main div.icon img{
+    width: 80px;
+}
+div.home div.main div.text{
+}
+div.home div.main div.text h2{
+    letter-spacing: 1px;
+    color: #707070;
+    transition: 1s ease-in-out;
+}
+div.home div.main div.text p{
+    letter-spacing: 2px;
+    color: #707070;
+    transition: 2s ease-in-out;
+}
